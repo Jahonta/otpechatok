@@ -1,4 +1,4 @@
 export default function getDeviceMemory(): number | undefined {
     // @ts-ignore
-    return navigator.deviceMemory;
+    return navigator.deviceMemory || "no";
   }

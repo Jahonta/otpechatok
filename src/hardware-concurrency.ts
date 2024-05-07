@@ -1,3 +1,3 @@
-export default function getHardwareConcurrency(): number | undefined {
-  return navigator.hardwareConcurrency;
+export default function getHardwareConcurrency(): number | "no" {
+  return navigator.hardwareConcurrency || "no";
 }

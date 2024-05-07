@@ -1,14 +1,14 @@
 /**
  * @see https://www.w3.org/TR/mediaqueries-5/#dynamic-range
  */
-export default function isHDR(): boolean | undefined {
+export default function isHDR(): boolean | "no" {
     if (doesMatch('high')) {
       return true
     }
     if (doesMatch('standard')) {
       return false
     }
-    return undefined
+    return "no"
   }
   
   function doesMatch(value: string) {

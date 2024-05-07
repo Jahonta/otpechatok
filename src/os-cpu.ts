@@ -1,4 +1,4 @@
-export default function getOsCpu(): string | undefined {
+export default function getOsCpu(): string | "no" {
     // @ts-ignore
     return navigator.oscpu || 'no';
   }

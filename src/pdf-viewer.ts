@@ -1,3 +1,3 @@
-export default function isPdfViewerEnabled(): boolean | undefined {
-    return navigator.pdfViewerEnabled
+export default function isPdfViewerEnabled(): boolean | "no" {
+    return navigator.pdfViewerEnabled || "no"
   }

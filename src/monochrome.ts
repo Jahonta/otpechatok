@@ -7,10 +7,10 @@ const maxValueToCheck = 100
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/monochrome
  */
-export default function getMonochromeDepth(): number | undefined {
+export default function getMonochromeDepth(): number | "no" {
   if (!matchMedia('(min-monochrome: 0)').matches) {
     // The media feature isn't supported by the browser
-    return undefined
+    return "no"
   }
 
   // A variation of binary search algorithm can be used here.
