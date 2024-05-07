@@ -117,7 +117,15 @@
         "invertedColors": "no"
     },
     {
-        "languages": [["ru-RU"], "ru-RU", "ru", "en-US", "en"]
+        "languages": [
+            [
+                "ru-RU"
+            ],
+            "ru-RU",
+            "ru",
+            "en-US",
+            "en"
+        ]
     },
     {
         "localStorage": true
