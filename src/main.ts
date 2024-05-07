@@ -111,3 +111,11 @@ setTimeout(async () => {
     document.querySelector("#output-2")!.innerHTML = secondResult;
     document.querySelector("#match")!.textContent = String(JSON.stringify(secondResult) === JSON.stringify(firstResult));
 }, 5000)
+
+document.querySelector("#copy-1")?.addEventListener("click", () => {
+    navigator.clipboard.writeText(firstResult);
+});
+
+document.querySelector("#copy-2")?.addEventListener("click", () => {
+    navigator.clipboard.writeText(secondResult);
+});
